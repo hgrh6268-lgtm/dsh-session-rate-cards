@@ -7,10 +7,10 @@
 ## 安装
 
 ```sh
-dsh plugin --profile web add dsh-session-cost
+dsh plugin --profile web add dsh-session-rate-cards
 ```
 
-装完刷新页面即可生效（client 端立即注入，不需要重启 `dsh web`）。要求 DSH `>=0.2.1-rc.3`（见 `package.json` 的 `engines.dsh`）。
+装完刷新页面即可生效（client 端立即注入，不需要重启 `dsh web`）。要求 DSH `>=0.2.1-rc.2`（见 `package.json` 的 `engines.dsh`）。
 
 ## 计价方式
 
@@ -70,7 +70,7 @@ A live CNY cost readout under the composer of the DSH Web GUI. Every assistant m
 **Settings → Session Cost** is a rate-card panel: built-in and custom models are listed side by side, prices can be edited, reset to the built-in values, or added for a new model id. Rate cards live in `$DSH_HOME/storages/session-cost/pricing.json`, so upgrading the plugin never overwrites your prices. A model without a card is priced at Flash rates and marked with `~` instead of pretending to be exact.
 
 ```sh
-dsh plugin --profile web add dsh-session-cost
+dsh plugin --profile web add dsh-session-rate-cards
 ```
 
-Requires DSH `>=0.2.1-rc.3`.
+Requires DSH `>=0.2.1-rc.2`.

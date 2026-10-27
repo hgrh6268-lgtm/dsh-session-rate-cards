@@ -1,6 +1,6 @@
 {
   "name": "dsh-session-rate-cards",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Live CNY token cost for the current DSH session, priced per model and peak/off-peak window, with a Settings page for rate cards.",
   "type": "module",
   "license": "MIT",
@@ -23,7 +23,7 @@
     "pricing"
   ],
   "engines": {
-    "dsh": ">=0.2.1-rc.3"
+    "dsh": ">=0.2.1-rc.2"
   },
   "exports": {
     ".": "./index.js",
