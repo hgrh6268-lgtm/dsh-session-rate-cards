@@ -1,0 +1,56 @@
+{
+  "name": "dsh-session-rate-cards",
+  "version": "1.0.0",
+  "description": "Live CNY token cost for the current DSH session, priced per model and peak/off-peak window, with a Settings page for rate cards.",
+  "type": "module",
+  "license": "MIT",
+  "author": "hgrh6268-LGTM",
+  "homepage": "https://github.com/hgrh6268-LGTM/dsh-session-rate-cards#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hgrh6268-LGTM/dsh-session-rate-cards.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hgrh6268-LGTM/dsh-session-rate-cards/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "session",
+    "cost",
+    "token",
+    "pricing"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.3"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "pricing.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

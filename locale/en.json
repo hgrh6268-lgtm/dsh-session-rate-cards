@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session Cost",
+    "description": "Shows the live CNY cost of token usage for the current session and provides a Settings page for editing per-model peak and off-peak rates."
+  }
+}

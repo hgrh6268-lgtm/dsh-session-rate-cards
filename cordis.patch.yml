@@ -1,0 +1,3 @@
+- insert:
+    - id: session-cost
+      name: 'dsh-session-rate-cards'
